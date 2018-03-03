@@ -1,0 +1,7 @@
+new:
+  name: New to-do
+  completed: false
+
+completed:
+  name: Completed to-do
+  completed: true

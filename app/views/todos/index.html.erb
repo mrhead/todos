@@ -5,6 +5,10 @@
   <%= form.submit "Add" %>
 <% end %>
 
-<ul data-placeholder="uncompleted_todos">
-  <%= render @todos %>
+<ul class="todos uncompleted" data-placeholder="uncompleted_todos">
+  <%= render @todos.uncompleted %>
+</ul>
+
+<ul class="todos completed" data-placeholder="completed_todos">
+  <%= render @todos.completed %>
 </ul>

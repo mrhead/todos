@@ -1,5 +1,10 @@
 <h1>Ajax to-dos</h1>
 
-<ul>
+<%= form_with model: @new_todo do |form| %>
+  <%= form.text_field :name, placeholder: "Add a todo", data: { placeholder: :new_todo_input } %>
+  <%= form.submit "Add" %>
+<% end %>
+
+<ul data-placeholder="uncompleted_todos">
   <%= render @todos %>
 </ul>

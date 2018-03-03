@@ -4,6 +4,7 @@ gem "rails", "~> 5.2.0.rc1"
 
 gem "bootsnap"
 gem "coffee-rails"
+gem "jquery-rails"
 gem "pg"
 gem "puma"
 gem "sass-rails"

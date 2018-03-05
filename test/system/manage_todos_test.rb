@@ -9,4 +9,22 @@ class ManageTodosTest < ApplicationSystemTestCase
 
     assert_content "A new todo!"
   end
+
+  test "complete a to-do" do
+    todo = todos(:new)
+
+    visit todos_url
+    check("checkbox_todo_#{todo.id}")
+
+    assert_selector ".todos.completed #todo_#{todo.id}"
+  end
+
+  test "uncomplete a to-do" do
+    todo = todos(:completed)
+
+    visit todos_url
+    uncheck("checkbox_todo_#{todo.id}")
+
+    assert_selector ".todos.uncompleted #todo_#{todo.id}"
+  end
 end

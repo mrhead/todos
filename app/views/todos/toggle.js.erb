@@ -1,0 +1,7 @@
+$("#<%= j dom_id(@todo) %>").remove();
+
+<% if @todo.completed? %>
+  $("[data-placeholder=completed_todos]").prepend("<%= j render "todo", todo: @todo %>");
+<% else %>
+  $("[data-placeholder=uncompleted_todos]").append("<%= j render "todo", todo: @todo %>");
+<% end %>

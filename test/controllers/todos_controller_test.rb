@@ -8,4 +8,13 @@ class TodosControllerTest < ActionDispatch::IntegrationTest
 
     assert_select 'li', todo.name
   end
+
+  test "toggle a todo" do
+    todo = todos(:new)
+
+    assert_changes "todo.completed?", from: false, to: true do
+      post toggle_todo_url(todo), xhr: true
+      todo.reload
+    end
+  end
 end

@@ -1,7 +1,9 @@
-<li id="<%= dom_id(todo) %>">
+<li id="<%= dom_id(todo) %>" class="todo">
   <%= form_with model: todo do |form| %>
-    <%= form.text_field :name %>
-    <%= form.submit "Save" %>
+    <div class="form-group">
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+    <%= form.submit "Save", class: "btn btn-primary" %>
+    <%= link_to "Cancel", todo_path(todo), class: "btn btn-link", remote: true %>
   <% end %>
-  <%= link_to "Cancel", todo_path(todo), remote: true %>
 </li>

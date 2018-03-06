@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+
+.container {
+  width: 500px;
+  margin-top: 100px;
+}

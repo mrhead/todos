@@ -1,14 +1,17 @@
-<h1>Ajax to-dos</h1>
+<h1 class="text-center">Ajax to-dos</h1>
+
+<hr>
 
 <%= form_with model: @new_todo do |form| %>
-  <%= form.text_field :name, placeholder: "Add a todo", data: { placeholder: :new_todo_input } %>
-  <%= form.submit "Add" %>
+  <div class="form-group">
+    <%= form.text_field :name, placeholder: "Add a new to-do...", data: { placeholder: :new_todo_input }, class: "form-control" %>
+  </div>
 <% end %>
 
-<ul class="todos uncompleted" data-placeholder="uncompleted_todos">
+<ul class="todos uncompleted list-unstyled" data-placeholder="uncompleted_todos">
   <%= render @todos.uncompleted.by_position %>
 </ul>
 
-<ul class="todos completed" data-placeholder="completed_todos">
+<ul class="todos completed list-unstyled" data-placeholder="completed_todos">
   <%= render @todos.completed.by_position %>
 </ul>

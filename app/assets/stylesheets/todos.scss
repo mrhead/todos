@@ -1,7 +1,29 @@
-// Place all the styles related to the todos controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.todos.uncompleted {
+  .todo {
+    padding: 7px;
+    background: #f0f0f0;
+    margin-bottom: 3px;
+    border-radius: 2px;
+  }
+}
 
 .todos.completed {
-  text-decoration: line-through;
+  .todo {
+    color: #666;
+    font-size: 0.9em;
+    span.name {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.todo {
+  .controls {
+    display: none;
+  }
+  &:hover {
+    .controls {
+      display: inline;
+    }
+  }
 }

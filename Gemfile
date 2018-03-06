@@ -4,6 +4,7 @@ gem "rails", "~> 5.2.0.rc1"
 
 gem "acts_as_list"
 gem "bootsnap"
+gem "bootstrap"
 gem "coffee-rails"
 gem "jquery-rails"
 gem "pg"

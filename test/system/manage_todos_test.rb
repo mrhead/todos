@@ -4,8 +4,8 @@ class ManageTodosTest < ApplicationSystemTestCase
   test "create a to-do" do
     visit todos_url
 
-    fill_in placeholder: "Add a todo", with: "A new todo!"
-    click_button "Add"
+    fill_in placeholder: "Add a new to-do...", with: "A new todo!"
+    page.execute_script("form = document.querySelector('form'); Rails.fire(form, 'submit');")
 
     assert_content "A new todo!"
   end
@@ -33,6 +33,7 @@ class ManageTodosTest < ApplicationSystemTestCase
 
     visit todos_url
 
+    find("#todo_#{todo.id}").hover
     within "#todo_#{todo.id}" do
       click_link "Edit"
       fill_in :todo_name, with: "New name"
@@ -47,6 +48,7 @@ class ManageTodosTest < ApplicationSystemTestCase
 
     visit todos_url
 
+    find("#todo_#{todo.id}").hover
     within "#todo_#{todo.id}" do
       click_link "Edit"
       click_link "Cancel"
@@ -60,6 +62,7 @@ class ManageTodosTest < ApplicationSystemTestCase
 
     visit todos_url
 
+    find("#todo_#{todo.id}").hover
     within "#todo_#{todo.id}" do
       accept_alert do
         click_link "Delete"

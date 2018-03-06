@@ -6,9 +6,9 @@
 <% end %>
 
 <ul class="todos uncompleted" data-placeholder="uncompleted_todos">
-  <%= render @todos.uncompleted %>
+  <%= render @todos.uncompleted.by_position %>
 </ul>
 
 <ul class="todos completed" data-placeholder="completed_todos">
-  <%= render @todos.completed %>
+  <%= render @todos.completed.by_position %>
 </ul>

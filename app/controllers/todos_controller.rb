@@ -14,7 +14,7 @@ class TodosController < ApplicationController
 
   def toggle
     @todo = Todo.find(params[:id])
-    @todo.toggle!(:completed)
+    @todo.toggle_completed!
   end
 
   private

@@ -2,6 +2,7 @@ ruby "2.5.0"
 
 gem "rails", "~> 5.2.0.rc1"
 
+gem "acts_as_list"
 gem "bootsnap"
 gem "coffee-rails"
 gem "jquery-rails"

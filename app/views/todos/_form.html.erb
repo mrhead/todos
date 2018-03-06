@@ -1,0 +1,7 @@
+<li id="<%= dom_id(todo) %>">
+  <%= form_with model: todo do |form| %>
+    <%= form.text_field :name %>
+    <%= form.submit "Save" %>
+  <% end %>
+  <%= link_to "Cancel", todo_path(todo), remote: true %>
+</li>

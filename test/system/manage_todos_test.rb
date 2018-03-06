@@ -27,4 +27,31 @@ class ManageTodosTest < ApplicationSystemTestCase
 
     assert_selector ".todos.uncompleted #todo_#{todo.id}"
   end
+
+  test "update a to-do" do
+    todo = todos(:new)
+
+    visit todos_url
+
+    within "#todo_#{todo.id}" do
+      click_link "Edit"
+      fill_in :todo_name, with: "New name"
+      click_button "Save"
+    end
+
+    assert_content "New name"
+  end
+
+  test "cancel to-do update" do
+    todo = todos(:new)
+
+    visit todos_url
+
+    within "#todo_#{todo.id}" do
+      click_link "Edit"
+      click_link "Cancel"
+    end
+
+    refute_selector "#todo_#{todo.id} form"
+  end
 end

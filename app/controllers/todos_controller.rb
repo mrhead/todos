@@ -1,4 +1,6 @@
 class TodosController < ApplicationController
+  before_action :set_todo, only: [:edit, :update, :show, :toggle]
+
   def index
     @todos = Todo.all
     @new_todo = Todo.new
@@ -12,12 +14,27 @@ class TodosController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @todo.update(todo_params)
+      render "show"
+    end
+  end
+
+  def show
+  end
+
   def toggle
-    @todo = Todo.find(params[:id])
     @todo.toggle_completed!
   end
 
   private
+
+  def set_todo
+    @todo = Todo.find(params[:id])
+  end
 
   def todo_params
     params.require(:todo).permit(:name)

@@ -54,4 +54,18 @@ class ManageTodosTest < ApplicationSystemTestCase
 
     refute_selector "#todo_#{todo.id} form"
   end
+
+  test "delete a to-do" do
+    todo = todos(:new)
+
+    visit todos_url
+
+    within "#todo_#{todo.id}" do
+      accept_alert do
+        click_link "Delete"
+      end
+    end
+
+    refute_selector "#todo_#{todo.id}"
+  end
 end

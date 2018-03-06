@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-  before_action :set_todo, only: [:edit, :update, :show, :toggle]
+  before_action :set_todo, only: [:edit, :update, :show, :toggle, :destroy]
 
   def index
     @todos = Todo.all
@@ -28,6 +28,10 @@ class TodosController < ApplicationController
 
   def toggle
     @todo.toggle_completed!
+  end
+
+  def destroy
+    @todo.destroy
   end
 
   private

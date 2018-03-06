@@ -5,6 +5,7 @@
   <% unless todo.completed? %>
     <span class="controls">
       <%= link_to "Edit", edit_todo_path(todo), remote: true %>
+      <%= link_to "Delete", todo_path(todo), remote: true, method: :delete, data: { confirm: "Are you sure?" } %>
     </span>
   <% end %>
 </li>

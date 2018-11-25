@@ -1,1 +1,1 @@
-$("#<%= dom_id(@todo) %>").replaceWith("<%= j render "form", todo: @todo %>");
+document.getElementById("<%= dom_id(@todo) %>").outerHTML = "<%= j render "form", todo: @todo %>"

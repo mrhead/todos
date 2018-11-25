@@ -1,2 +1,2 @@
-$("[data-placeholder=uncompleted_todos]").append("<%= j render "todo", todo: @todo %>");
-$("[data-placeholder=new_todo_input]").val("");
+document.querySelector("[data-placeholder=uncompleted_todos]").insertAdjacentHTML("beforeend", "<%= j render "todo", todo: @todo %>");
+document.querySelector("[data-placeholder=new_todo_input]").value = "";

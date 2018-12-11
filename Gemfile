@@ -1,6 +1,6 @@
 ruby "2.5.1"
 
-gem "rails", "~> 5.2.0.rc1"
+gem "rails", "~> 5.2.2"
 
 gem "acts_as_list"
 gem "bootsnap"

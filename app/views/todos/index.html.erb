@@ -4,7 +4,7 @@
 
 <%= form_with model: @new_todo do |form| %>
   <div class="form-group">
-    <%= form.text_field :name, placeholder: "Add a new to-do...", data: { placeholder: :new_todo_input }, class: "form-control" %>
+    <%= form.text_field :name, placeholder: "Add a new to-do...", autocomplete: :off, data: { placeholder: :new_todo_input }, class: "form-control" %>
   </div>
 <% end %>
 

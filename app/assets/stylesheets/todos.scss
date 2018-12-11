@@ -16,14 +16,3 @@
     }
   }
 }
-
-.todo {
-  .controls {
-    display: none;
-  }
-  &:hover {
-    .controls {
-      display: inline;
-    }
-  }
-}

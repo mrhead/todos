@@ -4,7 +4,7 @@ class TodosControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get todos_url
 
-    assert_select '.todos'
+    assert_select '.todo-list'
   end
 
   test "toggle a todo" do

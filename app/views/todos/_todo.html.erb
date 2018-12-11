@@ -1,11 +1,13 @@
-<li id="<%= dom_id(todo) %>" class="todo">
+<li id="<%= dom_id(todo) %>" class="<%= todo_class(todo) %>">
   <%= check_box_tag dom_id(todo, "checkbox"), 1, todo.completed?, data: { remote: true, url: toggle_todo_path(todo), method: :post } %>
-  <%= todo.name %>
+  <span class="todo__name">
+    <%= todo.name %>
+  </span>
 
   <% unless todo.completed? %>
-    <span class="controls float-right">
-      <%= link_to "Edit", edit_todo_path(todo), remote: true %> /
-      <%= link_to "Delete", todo_path(todo), remote: true, method: :delete, data: { confirm: "Are you sure?" } %>
+    <span class="todo__controls">
+      <%= link_to "Edit", edit_todo_path(todo), class: "link", remote: true %> /
+      <%= link_to "Delete", todo_path(todo), class: "link", remote: true, method: :delete, data: { confirm: "Are you sure?" } %>
     </span>
   <% end %>
 </li>

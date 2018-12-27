@@ -5,10 +5,10 @@
   <%= form.text_field :name, placeholder: "Add a new to-do...", autocomplete: :off, data: { placeholder: :new_todo_input }, class: "form__input" %>
 <% end %>
 
-<ul class="todo-list" data-placeholder="uncompleted_todos">
+<ul class="todo-list todo-list--uncompleted" data-placeholder="uncompleted_todos">
   <%= render @todos.uncompleted.by_position %>
 </ul>
 
-<ul class="todo-list" data-placeholder="completed_todos">
+<ul class="todo-list todo-list--completed" data-placeholder="completed_todos">
   <%= render @todos.completed.by_position %>
 </ul>

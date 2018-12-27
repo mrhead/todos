@@ -1,4 +1,4 @@
-<li id="<%= dom_id(todo) %>" class="todo todo--uncompleted">
+<li id="<%= dom_id(todo) %>" class="todo-list__todo">
   <%= form_with model: todo, class: "form" do |form| %>
     <div class="form__field">
       <%= form.text_field :name, class: "form__input", autocomplete: :off %>

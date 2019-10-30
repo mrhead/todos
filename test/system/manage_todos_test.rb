@@ -16,7 +16,7 @@ class ManageTodosTest < ApplicationSystemTestCase
     visit todos_url
     check("checkbox_todo_#{todo.id}")
 
-    assert_selector ".todos.completed #todo_#{todo.id}"
+    assert_selector ".todo-list--completed #todo_#{todo.id}"
   end
 
   test "uncomplete a to-do" do
@@ -25,7 +25,7 @@ class ManageTodosTest < ApplicationSystemTestCase
     visit todos_url
     uncheck("checkbox_todo_#{todo.id}")
 
-    assert_selector ".todos.uncompleted #todo_#{todo.id}"
+    assert_selector ".todo-list--uncompleted #todo_#{todo.id}"
   end
 
   test "update a to-do" do

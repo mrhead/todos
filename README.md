@@ -1,24 +1,37 @@
-# README
+# Ajax To-dos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a SJR (Server-generated JavaScript Responses) example created with Ruby on Rails.
 
-Things you may want to cover:
+![Ajax to-dos GIF](todos.gif)
 
-* Ruby version
+## Installation
 
-* System dependencies
+Clone the repository:
 
-* Configuration
+```
+git clone git@github.com:mrhead/todos.git
+```
 
-* Database creation
+Setup the application:
 
-* Database initialization
+```
+cd todos
+./bin/setup
+```
 
-* How to run the test suite
+Start the webserver:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+bundle exec rails s
+```
 
-* Deployment instructions
+Go to http://localhost:3000/.
 
-* ...
+## Testing
+
+Run:
+
+```
+rails test
+rails test:system
+```

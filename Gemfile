@@ -8,6 +8,7 @@ gem "puma"
 gem "sass-rails"
 gem "turbolinks"
 gem "uglifier"
+gem "webpacker"
 
 group :development, :test do
   gem "byebug"

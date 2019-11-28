@@ -6,8 +6,3 @@ addons:
   apt:
     - google-chrome-stable
     - chromium-chromedriver
-
-addons:
-  apt:
-    - google-chrome-stable
-    - chromium-chromedriver

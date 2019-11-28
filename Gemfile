@@ -1,8 +1,7 @@
-gem "rails", "~> 5.2.2"
+gem "rails", "6.0.1"
 
 gem "acts_as_list"
 gem "bootsnap"
-gem "coffee-rails"
 gem "pg"
 gem "puma"
 gem "sass-rails"

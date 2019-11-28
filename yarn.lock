@@ -692,6 +692,23 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@rails/actioncable@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.1.tgz#43adf86c2ad6e6a076259b7ea02ba747e4f8bb6f"
+  integrity sha512-JTOPnusNMuZjmJGoyL+IWrwGxP5UwqiffJYBHkhipIbVRSUN6RYjUspShshmRsRziSD2bQywKePPRR5pl1HXXg==
+
+"@rails/activestorage@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-6.0.1.tgz#d0dc600ab77160245fae74185bd62787a93d77a9"
+  integrity sha512-g4erBXADaKr/bjktnGcCnTMX0fsruOUp7FI+TuALWpRdI4UpAwAGbuaiTkthAfUW2tTjY/ABaZLTEdMnPb1Cfw==
+  dependencies:
+    spark-md5 "^3.0.0"
+
+"@rails/ujs@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-6.0.1.tgz#5eb013bd7f18a1cc7c314602d3b4d68302e20b60"
+  integrity sha512-IwUGMGke2u5W/hkJLOSU5xcQT3Y0gjIdiEsG27kHyLvsPOzdABKeAD8l37j6romhzeCmM56Wv52OGqSueUmyig==
+
 "@rails/webpacker@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-4.2.0.tgz#7cb40af589c3f38f9cc7847ee5f15e16d5d89d29"
@@ -6468,6 +6485,11 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+spark-md5@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/spark-md5/-/spark-md5-3.0.0.tgz#3722227c54e2faf24b1dc6d933cc144e6f71bfef"
+  integrity sha1-NyIifFTi+vJLHcbZM8wUTm9xv+8=
+
 spdx-correct@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-3.1.0.tgz#fb83e504445268f154b074e218c87c003cd31df4"
@@ -6948,6 +6970,11 @@ tunnel-agent@^0.6.0:
   integrity sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=
   dependencies:
     safe-buffer "^5.0.1"
+
+turbolinks@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/turbolinks/-/turbolinks-5.2.0.tgz#e6877a55ea5c1cb3bb225f0a4ae303d6d32ff77c"
+  integrity sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw==
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"

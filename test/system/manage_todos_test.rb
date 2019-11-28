@@ -5,7 +5,7 @@ class ManageTodosTest < ApplicationSystemTestCase
     visit todos_url
 
     fill_in placeholder: "Add a new to-do...", with: "A new todo!"
-    page.execute_script("form = document.querySelector('form'); Rails.fire(form, 'submit');")
+    find('[placeholder="Add a new to-do..."]').native.send_keys(:return)
 
     assert_content "A new todo!"
   end

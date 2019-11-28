@@ -2,12 +2,12 @@ gem "rails", "6.0.1"
 
 gem "acts_as_list"
 gem "bootsnap"
-gem "pg"
 gem "puma"
 gem "sass-rails"
 gem "turbolinks"
 gem "uglifier"
 gem "webpacker"
+gem "sqlite3"
 
 group :development, :test do
   gem "byebug"

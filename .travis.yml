@@ -1,3 +1,13 @@
 language: ruby
 rvm:
  - 2.6.5
+
+addons:
+  apt:
+    - google-chrome-stable
+    - chromium-chromedriver
+
+addons:
+  apt:
+    - google-chrome-stable
+    - chromium-chromedriver

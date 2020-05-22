@@ -1,4 +1,4 @@
-gem "rails", "6.0.1"
+gem "rails", "6.0.3.1"
 
 gem "acts_as_list"
 gem "bootsnap"

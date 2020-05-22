@@ -1,3 +1,5 @@
+source "https://rubygems.org"
+
 gem "rails", "6.0.3.1"
 
 gem "acts_as_list"

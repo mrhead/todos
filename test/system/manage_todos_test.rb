@@ -3,11 +3,13 @@ require "application_system_test_case"
 class ManageTodosTest < ApplicationSystemTestCase
   test "create a to-do" do
     visit todos_url
+    new_todo_field = find('[placeholder="Add a new to-do..."]')
 
     fill_in placeholder: "Add a new to-do...", with: "A new todo!"
-    find('[placeholder="Add a new to-do..."]').native.send_keys(:return)
+    new_todo_field.native.send_keys(:return)
 
     assert_content "A new todo!"
+    assert_equal "", new_todo_field.value
   end
 
   test "complete a to-do" do

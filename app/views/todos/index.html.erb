@@ -4,12 +4,14 @@
   <%= form.text_field :name, placeholder: "Add a new to-do...", autocomplete: :off, class: "form__input" %>
 <% end %>
 
-<ul class="todo-list todo-list--uncompleted" data-placeholder="uncompleted_todos">
+<ul class="todo-list todo-list--uncompleted">
   <%= turbo_frame_tag "todos" do %>
     <%= render @todos.uncompleted.by_position %>
   <% end %>
 </ul>
 
-<ul class="todo-list todo-list--completed" data-placeholder="completed_todos">
-  <%= render @todos.completed.by_position %>
+<ul class="todo-list todo-list--completed">
+  <%= turbo_frame_tag "completed_todos" do %>
+    <%= render @todos.completed.by_position %>
+  <% end %>
 </ul>

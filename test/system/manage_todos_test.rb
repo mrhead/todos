@@ -67,7 +67,7 @@ class ManageTodosTest < ApplicationSystemTestCase
     find("#todo_#{todo.id}").hover
     within "#todo_#{todo.id}" do
       accept_alert do
-        click_link "Delete"
+        click_button "Delete"
       end
     end
 

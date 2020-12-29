@@ -8,7 +8,7 @@
     <% unless todo.completed? %>
       <span class="todo-list__todo-controls">
         <%= link_to "Edit", edit_todo_path(todo), class: "link", remote: true %> /
-        <%= link_to "Delete", todo_path(todo), class: "link", remote: true, method: :delete, data: { confirm: "Are you sure?" } %>
+        <%= button_to "Delete", todo_path(todo), method: :delete, form_class: :link, data: { controller: "confirm", action: "confirm#confirm", confirm_message_value: "Are you sure?" } %>
       </span>
     <% end %>
   </li>

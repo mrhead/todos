@@ -1,8 +1,25 @@
-.link {
+@mixin link {
   color: #007bff;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
     color: #0056b3;
+  }
+}
+
+a.link {
+  @include link;
+}
+
+form.link {
+  display: inline;
+
+  input[type=submit] {
+    @include link;
+
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    cursor: pointer;
   }
 }

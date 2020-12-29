@@ -7,7 +7,7 @@ gem "bootsnap"
 gem "puma"
 gem "sass-rails"
 gem "sqlite3"
-gem "turbolinks"
+gem "turbo-rails"
 gem "webpacker"
 
 group :development, :test do

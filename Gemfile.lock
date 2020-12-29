@@ -173,9 +173,8 @@ GEM
     sqlite3 (1.4.2)
     thor (1.0.1)
     tilt (2.0.10)
-    turbolinks (5.2.1)
-      turbolinks-source (~> 5.2)
-    turbolinks-source (5.2.0)
+    turbo-rails (0.5.1)
+      rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     web-console (4.1.0)
@@ -215,7 +214,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen
   sqlite3
-  turbolinks
+  turbo-rails
   web-console
   webdrivers
   webpacker

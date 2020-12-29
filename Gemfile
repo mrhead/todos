@@ -6,7 +6,6 @@ gem "acts_as_list"
 gem "bootsnap"
 gem "puma"
 gem "sass-rails"
-gem "uglifier"
 gem "webpacker"
 gem "sqlite3"
 

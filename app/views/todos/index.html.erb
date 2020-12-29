@@ -1,6 +1,5 @@
 <h1 class="title">Ajax to-dos</h1>
 
-
 <%= form_with model: @new_todo, local: false, class: "form" do |form| %>
   <%= form.text_field :name, placeholder: "Add a new to-do...", autocomplete: :off, data: { placeholder: :new_todo_input }, class: "form__input" %>
 <% end %>

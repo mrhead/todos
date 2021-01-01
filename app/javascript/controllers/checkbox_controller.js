@@ -1,7 +1,8 @@
 import { Controller } from "stimulus"
+import { navigator } from "@hotwired/turbo"
 
 export default class extends Controller {
   submit() {
-    this.element.closest("form").requestSubmit();
+    navigator.submitForm(this.element.closest("form"))
   }
 }

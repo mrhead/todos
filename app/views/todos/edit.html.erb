@@ -1,4 +1,4 @@
-<%= turbo_frame_tag dom_id(@todo) do %>
+<%= turbo_frame_tag @todo do %>
   <li class="todo-list__todo">
     <%= form_with model: @todo, class: "form flex-grow" do |form| %>
       <div class="form__field">

@@ -17,7 +17,7 @@ class ManageTodosTest < ApplicationSystemTestCase
 
     visit todos_url
     within "#todo_#{todo.id}" do
-      check("todo_completed")
+      check("todo[completed]")
     end
 
     assert_selector ".todo-list--completed #todo_#{todo.id}"
@@ -28,7 +28,7 @@ class ManageTodosTest < ApplicationSystemTestCase
 
     visit todos_url
     within "#todo_#{todo.id}" do
-      uncheck("todo_completed")
+      uncheck("todo[completed]")
     end
 
     assert_selector ".todo-list--uncompleted #todo_#{todo.id}"

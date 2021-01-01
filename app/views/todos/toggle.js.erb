@@ -1,7 +1,0 @@
-document.getElementById("<%= dom_id(@todo) %>").remove();
-
-<% if @todo.completed? %>
-  document.querySelector("[data-placeholder=completed_todos]").insertAdjacentHTML("afterbegin", "<%= j render "todo", todo: @todo %>");
-<% else %>
-  document.querySelector("[data-placeholder=uncompleted_todos]").insertAdjacentHTML("beforeend", "<%= j render "todo", todo: @todo %>");
-<% end %>

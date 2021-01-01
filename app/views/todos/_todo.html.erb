@@ -1,13 +1,18 @@
-<li id="<%= dom_id(todo) %>" class="todo-list__todo">
-  <%= check_box_tag dom_id(todo, "checkbox"), 1, todo.completed?, data: { remote: true, url: toggle_todo_path(todo), method: :post } %>
-  <span class="todo-list__todo-name">
-    <%= todo.name %>
-  </span>
+<%= turbo_frame_tag todo do %>
+  <li class="todo-list__todo">
+    <%= form_with model: todo, url: toggle_todo_path(todo), method: :post do |form| %>
+      <%= form.check_box :completed, data: { controller: "checkbox", action: "checkbox#submit" } %>
 
-  <% unless todo.completed? %>
-    <span class="todo-list__todo-controls">
-      <%= link_to "Edit", edit_todo_path(todo), class: "link", remote: true %> /
-      <%= link_to "Delete", todo_path(todo), class: "link", remote: true, method: :delete, data: { confirm: "Are you sure?" } %>
-    </span>
-  <% end %>
-</li>
+      <span class="todo-list__todo-name">
+        <%= todo.name %>
+      </span>
+    <% end %>
+
+    <% unless todo.completed? %>
+      <span class="todo-list__todo-controls">
+        <%= link_to "Edit", edit_todo_path(todo), class: "link" %> /
+        <%= button_to "Delete", todo_path(todo), method: :delete, form_class: :link, data: { confirm: "Are you sure?" } %>
+      </span>
+    <% end %>
+  </li>
+<% end %>

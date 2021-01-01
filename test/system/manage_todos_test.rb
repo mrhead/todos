@@ -16,7 +16,9 @@ class ManageTodosTest < ApplicationSystemTestCase
     todo = todos(:new)
 
     visit todos_url
-    check("checkbox_todo_#{todo.id}")
+    within "#todo_#{todo.id}" do
+      check("todo_completed")
+    end
 
     assert_selector ".todo-list--completed #todo_#{todo.id}"
   end
@@ -25,7 +27,9 @@ class ManageTodosTest < ApplicationSystemTestCase
     todo = todos(:completed)
 
     visit todos_url
-    uncheck("checkbox_todo_#{todo.id}")
+    within "#todo_#{todo.id}" do
+      uncheck("todo_completed")
+    end
 
     assert_selector ".todo-list--uncompleted #todo_#{todo.id}"
   end
@@ -54,9 +58,9 @@ class ManageTodosTest < ApplicationSystemTestCase
     within "#todo_#{todo.id}" do
       click_link "Edit"
       click_link "Cancel"
-    end
 
-    refute_selector "#todo_#{todo.id} form"
+      assert_button "Save", count: 0
+    end
   end
 
   test "delete a to-do" do
@@ -67,7 +71,7 @@ class ManageTodosTest < ApplicationSystemTestCase
     find("#todo_#{todo.id}").hover
     within "#todo_#{todo.id}" do
       accept_alert do
-        click_link "Delete"
+        click_button "Delete"
       end
     end
 

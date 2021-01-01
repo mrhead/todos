@@ -1,0 +1,12 @@
+<%= turbo_frame_tag @todo do %>
+  <li class="todo-list__todo">
+    <%= form_with model: @todo, class: "form flex-grow" do |form| %>
+      <div class="form__field">
+        <%= form.text_field :name, data: { controller: "auto-select" }, class: "form__input", autocomplete: :off %>
+      </div>
+
+      <%= form.submit "Save", class: "button button--primary" %>
+      <%= link_to "Cancel", todo_path(@todo), class: "button link" %>
+    <% end %>
+  </li>
+<% end %>

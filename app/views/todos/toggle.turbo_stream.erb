@@ -1,0 +1,7 @@
+<%= turbo_stream.remove dom_id(@todo) %>
+
+<% if @todo.completed? %>
+  <%= turbo_stream.prepend "completed_todos", @todo %>
+<% else %>
+  <%= turbo_stream.append "todos", @todo %>
+<% end %>

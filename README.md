@@ -4,7 +4,7 @@ A simple to-do list application created with [Hotwire](https://hotwire.dev/) and
 
 ![Ajax to-dos GIF](todos.gif)
 
-> Note: This app was originally created with SJR (Server-generated JavaScript Responses) which are kind of old predecessors of Hotwire. You can find the SJR version in the [sjr](https://github.com/mrhead/todos/tree/server-generated-javascript-responses) branch. R.I.P. SJR.
+> Note: This app was originally created with SJR (Server-generated JavaScript Responses) which are kind of old predecessors of Hotwire. You can find the SJR version in the [sjr](https://github.com/mrhead/todos/tree/sjr) branch. R.I.P. SJR.
 
 ## Installation
 

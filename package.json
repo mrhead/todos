@@ -7,7 +7,7 @@
     "@rails/ujs": "^6.1.4",
     "@rails/webpacker": "^5.2.1",
     "form-request-submit-polyfill": "^2.0.0",
-    "stimulus": "^2.0.0"
+    "stimulus": "^3.0.0"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.11.2"

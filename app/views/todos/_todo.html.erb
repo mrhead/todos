@@ -11,7 +11,7 @@
     <% unless todo.completed? %>
       <span class="todo-list__todo-controls">
         <%= link_to "Edit", edit_todo_path(todo), class: "link" %> /
-        <%= button_to "Delete", todo_path(todo), method: :delete, form_class: :link, data: { confirm: "Are you sure?" } %>
+        <%= button_to "Delete", todo_path(todo), method: :delete, form: { class: :link, data: { turbo_confirm: "Are you sure?" } } %>
       </span>
     <% end %>
   </li>

@@ -4,8 +4,6 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo-rails": "^7.0.1",
-    "@rails/actioncable": "^6.1.4",
-    "@rails/activestorage": "^6.1.4",
     "@rails/ujs": "^6.1.4",
     "esbuild": "^0.13.14",
     "form-request-submit-polyfill": "^2.0.0"

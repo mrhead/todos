@@ -4,12 +4,12 @@ gem "rails", "~> 6.1.4"
 
 gem "acts_as_list"
 gem "bootsnap"
+gem "jsbundling-rails"
 gem "puma"
 gem "rexml"
 gem "sass-rails"
 gem "sqlite3"
-gem "turbo-rails"
-gem "webpacker"
+gem "hotwire-rails"
 
 group :development, :test do
   gem "byebug"

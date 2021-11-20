@@ -21,10 +21,10 @@ cd todos
 ./bin/setup
 ```
 
-Start the webserver:
+Start the webserver and esbuild watch process:
 
 ```
-bundle exec rails s
+./bin/dev
 ```
 
 Go to http://localhost:3000/.

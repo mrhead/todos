@@ -14,7 +14,7 @@ a.link {
 form.link {
   display: inline;
 
-  input[type=submit] {
+  button {
     @include link;
 
     border: none;

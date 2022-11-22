@@ -100,9 +100,6 @@ GEM
       concurrent-ruby (~> 1.0)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
-    listen (3.7.1)
-      rb-fsevent (~> 0.10, >= 0.10.3)
-      rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -167,9 +164,6 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    rb-fsevent (0.11.1)
-    rb-inotify (0.10.1)
-      ffi (~> 1.0)
     regexp_parser (2.5.0)
     rexml (3.2.5)
     rubyzip (2.3.2)
@@ -235,7 +229,6 @@ DEPENDENCIES
   capybara
   hotwire-rails
   jsbundling-rails
-  listen
   puma
   rails (~> 7.0.1)
   sass-rails

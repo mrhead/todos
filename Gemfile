@@ -8,7 +8,8 @@ gem "jsbundling-rails"
 gem "puma"
 gem "sass-rails"
 gem "sqlite3"
-gem "hotwire-rails"
+gem "stimulus-rails"
+gem "turbo-rails"
 
 group :development, :test do
   gem "byebug"

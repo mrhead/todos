@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.todo-list--completed {
+.todo-list--completed-todos {
   .todo-list__todo {
     color: #666;
     font-size: 0.9em;
@@ -13,7 +13,7 @@
   }
 }
 
-.todo-list--uncompleted {
+.todo-list--open-todos {
   .todo-list__todo {
     display: flex;
     justify-content: space-between;

@@ -20,7 +20,7 @@ class ManageTodosTest < ApplicationSystemTestCase
       check("todo[completed]")
     end
 
-    assert_selector ".todo-list--completed #todo_#{todo.id}"
+    assert_selector ".todo-list--completed-todos #todo_#{todo.id}"
   end
 
   test "uncomplete a to-do" do
@@ -31,7 +31,7 @@ class ManageTodosTest < ApplicationSystemTestCase
       uncheck("todo[completed]")
     end
 
-    assert_selector ".todo-list--uncompleted #todo_#{todo.id}"
+    assert_selector ".todo-list--open-todos #todo_#{todo.id}"
   end
 
   test "update a to-do" do

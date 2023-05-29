@@ -6,10 +6,9 @@ gem "acts_as_list"
 gem "bootsnap"
 gem "jsbundling-rails"
 gem "puma"
+gem "hotwire-rails"
 gem "sass-rails"
 gem "sqlite3"
-gem "stimulus-rails"
-gem "turbo-rails"
 
 group :development, :test do
   gem "byebug"

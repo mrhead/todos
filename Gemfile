@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 7.0.1"
+gem "rails", "~> 7.1"
 
 gem "acts_as_list"
 gem "bootsnap"

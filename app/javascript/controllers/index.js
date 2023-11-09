@@ -10,5 +10,5 @@ application.register("auto-select", AutoSelectController)
 import CheckboxController from "./checkbox_controller"
 application.register("checkbox", CheckboxController)
 
-import ResetFormController from "./reset_form_controller"
-application.register("reset-form", ResetFormController)
+import FormController from "./form_controller"
+application.register("form", FormController)

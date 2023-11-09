@@ -1,6 +1,6 @@
 <h1 class="title">Ajax to-dos</h1>
 
-<%= form_with model: @new_todo, data: { controller: "reset-form", action: "turbo:submit-end->reset-form#reset" }, class: "form" do |form| %>
+<%= form_with model: @new_todo, data: { controller: "form", action: "turbo:submit-end->form#reset" }, class: "form" do |form| %>
   <%= form.text_field :name, placeholder: "Add a new to-do...", autocomplete: :off, class: "form__input" %>
 <% end %>
 

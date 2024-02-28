@@ -42,7 +42,7 @@ class ManageTodosTest < ApplicationSystemTestCase
     find("#todo_#{todo.id}").hover
     within "#todo_#{todo.id}" do
       click_link "Edit"
-      fill_in :todo_name, with: "New name"
+      fill_in "edit_#{todo.id}_todo_name", with: "New name"
       click_button "Save"
     end
 

@@ -9,7 +9,7 @@ gem "puma"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "sass-rails"
-gem "sqlite3"
+gem "sqlite3", "~> 1.4"
 
 group :development, :test do
   gem "byebug"

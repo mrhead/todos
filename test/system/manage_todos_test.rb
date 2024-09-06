@@ -6,7 +6,10 @@ class ManageTodosTest < ApplicationSystemTestCase
     new_todo_field = find('[placeholder="Add a new to-do..."]')
 
     fill_in placeholder: "Add a new to-do...", with: "A new todo!"
-    new_todo_field.native.send_keys(:return)
+
+    new_todo_field.with_playwright_element_handle do |handle|
+      handle.press("Enter")
+    end
 
     assert_content "A new todo!"
     assert_equal "", new_todo_field.value

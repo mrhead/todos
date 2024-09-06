@@ -6,7 +6,9 @@
     "@hotwired/turbo-rails": "^8.0.5",
     "esbuild": "^0.23.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "playwright": "1.46.1"
+  },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
   }

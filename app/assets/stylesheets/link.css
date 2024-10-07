@@ -1,0 +1,33 @@
+:root {
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
+}
+
+a.link {
+  color: var(--link-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--link-hover-color);
+  }
+}
+
+form.link {
+  display: inline;
+
+  button {
+    color: var(--link-color);
+    text-decoration: none;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--link-hover-color);
+    }
+  }
+}

@@ -6,12 +6,12 @@
 
 <ul class="todo-list todo-list--open-todos">
   <%= turbo_frame_tag "todos" do %>
-    <%= render @todos.uncompleted.by_position %>
+    <%= render @open_todos %>
   <% end %>
 </ul>
 
 <ul class="todo-list todo-list--completed-todos">
   <%= turbo_frame_tag "completed_todos" do %>
-    <%= render @todos.completed.by_position %>
+    <%= render @completed_todos %>
   <% end %>
 </ul>

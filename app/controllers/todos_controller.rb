@@ -2,8 +2,9 @@ class TodosController < ApplicationController
   before_action :set_todo, only: [:edit, :update, :show, :toggle, :destroy]
 
   def index
-    @todos = Todo.all
     @new_todo = Todo.new
+    @open_todos = Todo.open.by_position
+    @completed_todos = Todo.completed.by_position
   end
 
   def create

@@ -5,7 +5,7 @@ class Todo < ApplicationRecord
 
   scope :by_position, -> { order(:position) }
   scope :completed, -> { where(completed: true) }
-  scope :uncompleted, -> { where(completed: false) }
+  scope :open, -> { where(completed: false) }
 
   def toggle_completed!
     toggle!(:completed)

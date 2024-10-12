@@ -21,7 +21,7 @@ cd todos
 ./bin/setup
 ```
 
-Start the webserver and esbuild watch process:
+Start the webserver:
 
 ```
 ./bin/dev

@@ -14,17 +14,11 @@ Clone the repository:
 git clone git@github.com:mrhead/todos.git
 ```
 
-Setup the application:
+Setup and start the application:
 
 ```
 cd todos
 ./bin/setup
-```
-
-Start the webserver:
-
-```
-./bin/dev
 ```
 
 Go to http://localhost:3000/.

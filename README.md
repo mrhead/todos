@@ -14,7 +14,7 @@ Clone the repository:
 git clone git@github.com:mrhead/todos.git
 ```
 
-Setup and start the application:
+Start the application:
 
 ```
 cd todos

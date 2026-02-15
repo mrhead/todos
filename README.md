@@ -28,6 +28,5 @@ Go to http://localhost:3000/.
 Run:
 
 ```
-rails test
-rails test:system
+./bin/ci
 ```

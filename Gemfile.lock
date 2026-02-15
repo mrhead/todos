@@ -83,10 +83,11 @@ GEM
     base64 (0.3.0)
     bigdecimal (4.0.1)
     bindex (0.8.1)
-    bootsnap (1.18.4)
+    bootsnap (1.23.0)
       msgpack (~> 1.2)
     builder (3.3.0)
-    byebug (12.0.0)
+    byebug (13.0.0)
+      reline (>= 0.6.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -129,11 +130,11 @@ GEM
       net-pop
       net-smtp
     marcel (1.1.0)
-    matrix (0.4.2)
+    matrix (0.4.3)
     mini_mime (1.1.5)
     minitest (6.0.1)
       prism (~> 1.5)
-    msgpack (1.7.3)
+    msgpack (1.8.0)
     net-imap (0.6.3)
       date
       net-protocol
@@ -159,8 +160,8 @@ GEM
     psych (5.3.1)
       date
       stringio
-    public_suffix (6.0.1)
-    puma (6.4.3)
+    public_suffix (7.0.2)
+    puma (7.2.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.4)
@@ -206,11 +207,11 @@ GEM
       erb
       psych (>= 4.0.0)
       tsort
-    regexp_parser (2.9.2)
+    regexp_parser (2.11.3)
     reline (0.6.3)
       io-console (~> 0.5)
-    rexml (3.3.9)
-    rubyzip (2.3.2)
+    rexml (3.4.4)
+    rubyzip (3.2.2)
     securerandom (0.4.1)
     selenium-webdriver (4.40.0)
       base64 (~> 0.2)

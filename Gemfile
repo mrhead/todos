@@ -2,7 +2,6 @@ source "https://rubygems.org"
 
 gem "rails", "~> 8.1"
 
-gem "acts_as_list"
 gem "bootsnap"
 gem "importmap-rails"
 gem "propshaft"
